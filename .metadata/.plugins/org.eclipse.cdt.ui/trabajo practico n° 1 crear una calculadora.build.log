@@ -1,0 +1,27 @@
+21:34:21 **** Incremental Build of configuration Debug for project trabajo practico n° 1 crear una calculadora ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\trabajo practico n° 1 crear una calculadora.o" "..\\src\\trabajo practico n° 1 crear una calculadora.c" 
+..\src\trabajo practico n° 1 crear una calculadora.c: In function 'main':
+..\src\trabajo practico n° 1 crear una calculadora.c:19:2: error: expected identifier or '(' before 'int'
+  int numerob;
+  ^~~
+..\src\trabajo practico n° 1 crear una calculadora.c:21:15: error: 'numero_a' undeclared (first use in this function)
+   scanf("%i",&numero_a);
+               ^~~~~~~~
+..\src\trabajo practico n° 1 crear una calculadora.c:21:15: note: each undeclared identifier is reported only once for each function it appears in
+..\src\trabajo practico n° 1 crear una calculadora.c:24:15: error: 'numero_b' undeclared (first use in this function)
+   scanf("%i",&numero_b);
+               ^~~~~~~~
+..\src\trabajo practico n° 1 crear una calculadora.c:18:6: warning: unused variable 'numeroa' [-Wunused-variable]
+  int numeroa,
+      ^~~~~~~
+..\src\trabajo practico n° 1 crear una calculadora.c: In function 'menu':
+..\src\trabajo practico n° 1 crear una calculadora.c:46:2: error: expected identifier or '(' before 'int'
+  int numero_b;
+  ^~~
+..\src\trabajo practico n° 1 crear una calculadora.c:51:15: error: 'numero_b' undeclared (first use in this function)
+   scanf("%i",&numero_b);
+               ^~~~~~~~
+
+21:34:29 Build Failed. 5 errors, 1 warnings. (took 8s.640ms)
+

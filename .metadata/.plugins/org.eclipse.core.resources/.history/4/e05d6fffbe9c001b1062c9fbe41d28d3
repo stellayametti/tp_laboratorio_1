@@ -1,0 +1,87 @@
+/*
+ ============================================================================
+ Name        : trabajo.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+void menu();
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout , NULL);
+
+
+	return 0;
+}
+     sumar(int numero_a , int numero_b);
+     restar(int numero_a , int numero_b);
+     multiplicar(int numero_a , int numero_b);
+     dividir(int numero_a , int numero_b);
+	void menu(){
+
+	int opc;
+	printf("1.sumar");
+	printf("/n2.restar");
+	printf("/n3..multiplicar");
+	printf("/n4..dividir");
+
+	printf("/nDigite su opcion: ");
+	scanf("%i" , &opc);
+
+
+	int numero_a , numero_b;
+	printf("/nDigite valor para numero1: ");
+	scanf("%i" , &numero_a);
+
+	printf("/nDigite valor para numero2: ");
+		scanf("%i" , &numero_b);
+
+		switch (opc){
+
+		case 1: sumar (numero_a,numero_b);
+		break;
+		case 2:
+			restar(numero_a,numero_b);
+			break;
+		case 3:
+			multiplicar(numero_a,numero_b);
+			break;
+		case 4:
+			dividir(numero_a,numero_b);
+			break;
+		default:
+			printf("opcion invalida");
+
+
+
+		}
+
+
+	void sumar(int numero_a,int numero_b);
+	{
+		printf("resultado: %i" , numero_a + numero_b);
+	}
+
+	void restar(int numero_a,int numero_b);
+    {
+	printf("resultado: %i" , numero_a - numero_b);
+	}
+
+	void multiplicar(int numero_a, int numero_b);
+	{
+	 printf("resultado: %i" , numero_a * numero_b);
+	}
+
+	void dividir(int numero_a, int numero_b);
+	{
+	 printf("resultado: %i" , numero_a / numero_b);
+	}
+
+	}
+
